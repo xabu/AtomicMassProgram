@@ -33,15 +33,15 @@ while(True):
         numbers.append(number)
         i += 1
     numFirst = 0
-    MM = 0
+    M = 0
     i = 0
     while i<len(elements):
-        MM+=am[elements[i]]*int(numbers[i])
+        M+=am[elements[i]]*int(numbers[i])
         if elements[i] == elements[0]:
             numFirst+=int(numbers[i])
         i+=1
-    n = m/MM
+    n = m/M
     particles = n * numFirst * 6.022141 * 10**23
-    print('MM = '+ str(MM))
+    print('M = '+ str(M))
     print('n = '+str(n))
     print('# of first particle = '+str(particles))
